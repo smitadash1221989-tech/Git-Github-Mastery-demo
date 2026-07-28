@@ -1,0 +1,146 @@
+Q1Create a folder named GitPracticeLab.
+mkdir GitPracticeLab
+cd GitPracticeLab
+
+Q2Initialize it as a Git repository.
+git init
+
+Q3Verify the repository status.
+git status
+
+Q4Create
+README.md
+.gitignore
+app.js
+login.js
+notes.txt
+
+touch README.md
+touch .gitignore
+touch app.js
+touch login.js
+touch notes.txt
+
+Q5Create folders
+docs
+images
+
+mkdir docs
+mkdir images
+
+Q6Create
+docs/guide.md
+images/logo.png
+
+touch docs/guide.md
+touch images/logo.png
+
+Q7Stage only
+README.md
+app.js
+
+git add README.md
+git add app.js
+
+# Q8Verify staged files.
+
+git status
+
+Q9Stage remaining files.
+
+git add .
+
+Q10Commit Initial Project Setup
+
+git commit -m "Initial Project Setup"
+
+Part 2 — Amend Commit
+Q11 You forgot to create
+LICENSE
+Add it.
+Amend the previous commit without changing the message.
+
+touch LICENSE
+git add LICENSE
+git commit --amend 
+
+Q12Change the previous commit message to
+Initial Project Structure
+
+git commit --amend -m "Initial Project Structure"
+
+Part 3 — Modify Files
+Q13 Add text into
+README.md
+Do not stage.
+Show unstaged changes.
+
+echo "this is a demo text added">README.md
+git status
+git diff -->shows difference between unstaged changes and staged changes
+
+Q14Stage README.
+Show staged changes.
+
+git add README.md
+git diff --staged
+
+Q15Modify
+login.js
+Leave it unstaged.
+Display
+staged changes
+unstaged changes
+
+echo "edit login.js">login.js
+git diff
+git diff --staged
+
+Part 4 — Rename & Move
+Q16Rename
+notes.txt to todo.txt
+
+git mv notes.txt todo.txt
+
+Q17Move 
+app.js into docs/
+
+git mv app.js module2-Commit-History/docs/app.js
+
+Q18Commit
+Reorganized project
+
+git commit -m "Reorganized Project"
+
+Part 5 — Delete Files
+
+Q19Delete
+docs/app.js using Git.
+Commit.
+git rm module2-Commit-History/docs/guide.md
+git commit -m "delete guide.md"
+
+Q20Create
+temp.txt
+Do NOT stage it.
+Delete it.
+
+git clean -f ->delete untracked files.
+
+Q21Create
+draft.txt
+Delete it using
+git clean
+
+touch draft.txt
+git clean -f
+
+Part 6 — Restore
+Q22Modify
+README.md
+Restore it.
+
+
+
+Q23Delete
+docs/guide.md
