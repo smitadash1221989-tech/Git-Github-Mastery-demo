@@ -1,0 +1,28 @@
+Create feature-profile from develop.
+
+git branch develop
+git switch develop
+git branch feature-profile
+git branch
+git switch feature-login
+
+Commit two changes.
+
+touch newfile.txt
+git add newfile.txt
+git commit -m "newfile commit"
+echo "this is a new file">newfile.txt
+git add .
+git commit -m "newfile edit"
+
+
+Push it to GitHub.
+Merge it into develop.
+Delete the local branch.
+Delete the remote branch.
+Create release-v2 from a tag.
+Compare release-v2 with main.
+Enter detached HEAD mode.
+Recover your work by creating a new branch.
+Delete all merged branches except main and develop.
+Verify the final branch list using:
