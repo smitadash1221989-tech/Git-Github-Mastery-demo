@@ -1,0 +1,27 @@
+Create
+main
+feature-payment
+feature-login
+
+git branch feature-login
+git branch feature-payment
+git switch feature-login
+touch file1.txt
+touch file2.txt
+git add .
+git commit -m "commit in feature-login"
+git log --oneline
+copy the commit id
+git switch main
+git cherry-pick 8716835
+the files are copied in main branch
+same swithc to feature-payment
+git switch feature-payment
+git cherry-pick 8716835
+the files are copied in feature-payment
+
+Commit in feature-login.
+Cherry-pick into main.
+Cherry-pick multiple commits.
+Resolve conflicts.
+
