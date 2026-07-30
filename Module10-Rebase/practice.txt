@@ -1,0 +1,32 @@
+Create
+
+main
+feature
+
+Add commits on both.
+
+Practice
+
+Rebase feature.- rebase means when the feature branch has a commit and the main branch has commit
+when we use git rebase feature, then new commit id is created for the feature branch having the same data of the feature branch commit and then the commit is replayed to form a linear history
+
+Interactive rebase.
+
+make 5 commits
+git rebase -i HEAD~4
+
+Squash commits.
+
+Reword commit.
+
+Drop commit.
+
+Edit commit.
+
+Recover from failed rebase.
+
+rm -rf .git/rebase-merge
+
+Abort rebase.
+
+Continue rebase.
