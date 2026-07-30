@@ -1,0 +1,25 @@
+Create
+
+v1.0
+v1.1
+v2.0
+git tag -a v1.0 -m "release version 1"
+git tag -a v1.1 -m "release version 2"
+git tag -a v2.0 -m "release version3"
+Practice
+
+List tags.
+git tag
+
+View tag details.
+git show v1.0
+git show v1.2
+Delete tag.
+
+Push tag.
+
+Push all tags.
+
+Checkout tag.
+
+Create branch from tag.
