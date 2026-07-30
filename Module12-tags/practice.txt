@@ -15,7 +15,8 @@ View tag details.
 git show v1.0
 git show v1.2
 Delete tag.
-
+git tag -d V1.0
+git push origin --delete v1.0
 Push tag.
 
 Push all tags.
