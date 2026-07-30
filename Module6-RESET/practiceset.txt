@@ -19,15 +19,27 @@ Keep files.
 Remove from staging.
 
 Hard Reset- the files are removed completelty from the working directory
-
+in all the case of reset the history is rewritten with the different states of working directotry and staging area conditions
 Undo last commit completely.
-
 Recover it using reflog.
+git reflog
+git reset --hard commitid - always take the commit id just before the delete commit so that all the details prior to delete will be recovered
 
 Reset Specific File
+git add .
+git restore --staged filename
+the files are unstaged
+
+echo "this is a dummy file">file1.txt
+git status
+git restore file1.txt
+git status 
+the changes done in file1 is resetted
 
 Stage multiple files.
-
+ git add .
+git status - showss the staged status of each file
+git restore --staged
 Unstage one.
 
 Reset to Older Commit
