@@ -1,0 +1,21 @@
+in revert-> the commit is reverted by creating a new commit with a new commit id that copies the reverted changes in the newly created commit
+
+Create
+
+Commit A
+Commit B
+Commit C
+
+Practice
+
+Revert
+
+latest commit
+middle commit
+merge commit
+
+Observe
+
+New commit created.
+
+History preserved.
