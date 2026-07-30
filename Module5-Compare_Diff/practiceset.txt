@@ -26,4 +26,4 @@ check for practiceset
  
  first find the head by finding the log
  git log --oneline
- 
+ git diff HEAD~2 HEAD practiceset.txt
