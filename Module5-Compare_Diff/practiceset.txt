@@ -1,0 +1,23 @@
+Practice
+
+Compare
+
+Current file vs last commit
+
+git diff
+
+Compare staged vs last commit
+
+git diff --staged
+
+Compare two commits
+
+git diff commit1 commit2
+
+Compare two branches
+
+git diff main feature-login
+
+Compare one file
+
+git diff HEAD~2 HEAD file.txt
