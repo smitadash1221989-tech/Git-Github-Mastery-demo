@@ -18,4 +18,38 @@ Observe
 
 New commit created.
 
+
 History preserved.
+
+touch file1.txt
+git add .
+git commit -m "commit1"
+touch file2.txt
+git add .
+git commit -m "commit2"
+touch file3.txt
+git add .
+git commit -m "commit3"
+echo "this is a text">file1.txt
+git add file1.txt
+git commit -m "commit 4"
+git log --oneline ->check the head pointer and the details
+git revert HEAD~1
+-observe-> a new commit id is created with the revert chanes, the text is not present anymore in file1
+but the histpry commit 4 is present
+
+merge commit
+add a text commit it
+now add a same text again in same line and commit
+now try to revert the previous change
+
+echo "this is a second line">file2.txt
+git add .
+git commit -m "file2.txt secondline commit"
+now in the file2.txt in the secondline add one more line and rewrite it and save it
+git add .
+git commit -m "file2.txt overlapped"
+git revert <take the commit id of the file2.txt secondline commit>
+merge conflict, resolve the conflict
+git add .
+git commit -m "conflict merged"
