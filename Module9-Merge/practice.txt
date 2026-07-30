@@ -1,0 +1,66 @@
+Create
+
+feature-login
+feature-payment
+feature-profile
+
+Practice
+
+Fast-forward merge.
+user is on main branch
+git switch feature-login
+touch file1.txt
+git add .
+git commit -m "fast forward merge"
+git log --oneline --graph ->check the head is on feature-login,
+git switch main
+git merge feature-login
+ check the commit id Head points both the main and feature-login
+the pointer just moves, and no new commit id is created
+
+
+Three-way merge.
+
+git switch feature-login
+echo "this is a demo file1">file1.txt
+git add .
+git commit -m "commit 1"
+git switch feature-payment
+echo "this is a demo file2">file2.txt
+git add .
+git commit -m "commit 2"
+git switch main
+git "this is a demo file2 dropdown">file2.txt
+git add .
+git commit -m "commit 3"
+git merge feature-login
+git log --graph
+git merge feature-payment
+merge conflict
+without resolving click on --Abort
+merge again and then resolve manually
+git add . 
+git commit -m "merge conflict resolved"
+
+
+
+Merge conflict.
+
+Resolve conflict.
+
+Abort merge.
+
+Merge without fast-forward.
+
+git branch feature1
+git branch feature2
+git switch feature1
+echo "this is a feature1 branch data">>text1.txt
+git add .
+git commit -m "feature1 commit"
+git switch feature2
+git merge --no-ff feature1 -> here even if it is a fast forward merge still it will generate a merge Commit
+git log --graph
+Delete merged branch
+once the merging is completed delete the merged branch
+git branch -d feature-login
