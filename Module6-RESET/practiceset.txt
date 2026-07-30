@@ -1,0 +1,37 @@
+Soft Reset - the last commit is resetted but the files are in staged and the file is in working directory
+
+Create
+
+Commit 1
+Commit 2
+Commit 3
+
+Practice
+
+Undo last commit but keep staged changes.
+
+git reset --soft HEAD~1
+the history is rewritten,it removes the commit3 the last commit from the commit history and keeps the changes staged
+
+Mixed Reset - the files are in working diectory but now in unstaged state - 
+Undo commit. mixed reset is same as normal reset
+Keep files.
+Remove from staging.
+
+Hard Reset- the files are removed completelty from the working directory
+
+Undo last commit completely.
+
+Recover it using reflog.
+
+Reset Specific File
+
+Stage multiple files.
+
+Unstage one.
+
+Reset to Older Commit
+
+Move branch backward.
+
+Recover latest commit.
