@@ -12,11 +12,11 @@ git diff --staged
 
 Compare two commits
 
-git diff commit1 commit2
+git diff afa6b8d cd0f8bb
 
 Compare two branches
 
-git diff main feature-login
+git diff branch1 branch2
 
 Compare one file
 
