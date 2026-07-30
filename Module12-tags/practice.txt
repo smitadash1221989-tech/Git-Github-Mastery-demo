@@ -21,6 +21,15 @@ Push tag.
 
 Push all tags.
 
+git push origin --tags
+
 Checkout tag.
 
 Create branch from tag.
+
+git switch -c releasev1.0 v1.2
+
+push tag
+
+git push origin --tags 
+git push --set-upstream origin releasev2.1
