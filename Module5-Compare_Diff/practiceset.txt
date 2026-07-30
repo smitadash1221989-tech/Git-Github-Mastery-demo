@@ -21,3 +21,9 @@ git diff branch1 branch2
 Compare one file
 
 git diff HEAD~2 HEAD file.txt
+
+check for practiceset 
+ 
+ first find the head by finding the log
+ git log --oneline
+ 
